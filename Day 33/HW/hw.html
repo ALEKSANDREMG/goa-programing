@@ -1,0 +1,102 @@
+<!--1)
+id=ატრიბუტი გამოიყენება ერთ კონკრეტულ ელემენტზე მითითებისთვის, რომელიც უნიკალურია დოკუმენტში. მისი მნიშვნელობა უნდა იყოს მხოლოდ ერთი კონკრეტული ელემენტისთვის და ის ხშირად გამოიყენება JavaScript-ში ან CSS-ში ელემენტის პირდაპირ მისამართზე.
+
+class=ატრიბუტი გამოიყენება ერთ ჯგუფში მყოფი ელემენტების დასანიშნად, რომლებსაც იგივე სტილი ან ფუნქციონალი უნდა ჰქონდეთ. ერთიდაიმავე `class` შეიძლება ჰქონდეს რამდენიმე ელემენტს.
+
+გამოყენება:
+id — გამოიყენეთ, როცა ელემენტი უნიკალურია (მაგალითად, ჰედერი, ძირითადი ნავიგაცია).
+class — გამოიყენეთ, როცა ბევრი ელემენტი უნდა ჰქონდეს ერთი და იგივე სტილი (მაგალითად, ყველა ღილაკი ან სექცია).-->
+
+<!--2)
+
+RGB არის ფერის სისტემა, რომელიც შედგება სამი ძირითადი ფერის:
+წითელი (Red), მწვანე (Green) და ლურჯი (Blue) შერევისგან.
+თითოეული ფერის ინტენსივობა შეიძლება იყოს 0-დან 255-მდე,
+სადაც 0 ნიშნავს არარსებობას, ხოლო 255 — მაქსიმალურ ინტენსივობას.-->
+<!--3)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header id="site-title">
+        <h1>My Website</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="" class="nav-link">Home</a></li>
+            <li><a href="" class="nav-link">About</a></li>
+            <li><a href="" class="nav-link">Services</a></li>
+            <li><a href="" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi nihil mollitia eos totam reprehenderit aliquid accusantium</p>
+        <p class="highlight">Lorem ipsum dolor sit amet consectetur </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eveniet aliquid eaque voluptatem soluta quasi accusamus.</p>
+    </main>
+
+</body>
+</html>
+
+<!--4)-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Styling Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="color-box">
+        <p class="color-text">This is the first colored paragraph.</p>
+        <p class="color-text">This is the second colored paragraph.</p>
+        <p class="color-text">This is the third colored paragraph.</p>
+    </div>
+<style>
+    /* Style the div with the id 'color-box' */
+#color-box {
+    background-color: rgb(200, 150, 255); /* Light purple background */
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Style the paragraphs with the class 'color-text' */
+.color-text:nth-child(1) {
+    color: rgb(255, 100, 100); /* Red text for the first paragraph */
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.color-text:nth-child(2) {
+    color: rgb(100, 255, 100); /* Green text for the second paragraph */
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.color-text:nth-child(3) {
+    color: rgb(100, 100, 255); /* Blue text for the third paragraph */
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+
+
+
+</style>
+</body>
+</html>
