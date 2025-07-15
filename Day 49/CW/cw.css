@@ -1,0 +1,32 @@
+body{
+height:100vh ;
+}
+
+#main div {
+    width:100px;
+    height: 800px;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 33,3% 33,3% 33,3%;
+}
+#main-div div {
+    border-radius:12px;
+    margin:5px;
+}
+#div1 {
+    background-color: green;
+    grid-area: 1 / 1 / 2 / 4;
+}
+#div2 {
+    background-color: coral;
+    grid-area: 2 / 1 / 4 / 3;
+}
+#div3 {
+    background-color: red;
+    grid-area: 2 / 3 / 3 / 4;
+}
+#div4 {
+    background-color: orange;
+    grid-area: 3 / 3 / 4 / 4;
+}

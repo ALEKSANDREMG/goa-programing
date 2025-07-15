@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <title>საკლასო დავალება</title>
+</head>
+<body>
+
+  <form id="myForm">
+    <input type="text" name="input1" placeholder="ინფუთი 1" /><br>
+    <input type="text" name="input2" placeholder="ინფუთი 2" /><br>
+    <input type="text" name="input3" placeholder="ინფუთი 3" /><br>
+    <input type="text" name="input4" placeholder="ინფუთი 4" /><br>
+    <button type="submit">დადასტურება</button>
+  </form>
+
+  <script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      let form = document.getElementById("myForm");
+
+      let val1 = form.elements["input1"].value;
+      let val2 = form.elements["input2"].value;
+      let val3 = form.elements["input3"].value;
+      let val4 = form.elements["input4"].value;
+
+      console.log(val1, val2, val3, val4);
+
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>
