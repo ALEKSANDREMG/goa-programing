@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Slider</title>
+<style>
+  body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #111111de;
+  }
+  .slider {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.41);
+  }
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .slides img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+  }
+  .buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  button {
+    background: rgba(0, 0, 0, 0.695);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 50%;
+  }
+</style>
+</head>
+<body>
+
+<div class="slider">
+  <div class="slides">
+    <img src="https://ss.sport-express.ru/userfiles/materials/161/1613521/large.jpg" alt="Slide 1">
+    <img src="https://w0.peakpx.com/wallpaper/147/917/HD-wallpaper-ronaldo-head-sports-uniform-soceer-cr7-man-united-sport.jpg" alt="Slide 1">
+    <img src="https://asset.kompas.com/crops/nmcc4gH0DprqBPKQptId1vjMcC0=/103x0:688x390/1200x800/data/photo/2018/04/03/2581772204.jpg" alt="Slide 1">
+    <img src="https://www.shutterstock.com/image-photo/turin-italy-02-february-2019-600nw-1302982387.jpg" alt="Slide 1">
+    <img src="https://static.promediateknologi.id/crop/3x46:1079x830/0x0/webp/photo/p2/86/2025/07/20/Semi-finals-here-we-come-169048758.jpg" alt="Slide 1">
+  </div>
+  <div class="buttons">
+    <button id="prev">&#10094;</button>
+    <button id="next">&#10095;</button>
+  </div>
+</div>
+
+<script>
+  const slides = document.querySelector('.slides');
+  const images = document.querySelectorAll('.slides img');
+  const totalSlides = images.length;
+  let index = 0;
+
+  document.getElementById('next').addEventListener('click', () => {
+    index = (index + 1) % totalSlides;
+    slides.style.transform = `translateX(-${index * 600}px)`;
+  });
+
+  document.getElementById('prev').addEventListener('click', () => {
+    index = (index - 1 + totalSlides) % totalSlides;
+    slides.style.transform = `translateX(-${index * 600}px)`;
+  });
+</script>
+
+</body>
+</html>
