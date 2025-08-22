@@ -1,0 +1,18 @@
+<div id="content">
+  <p>First paragraph</p>
+  <p>Second paragraph</p>
+</div>
+
+<ul id="myList">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+
+<script>
+  const contentDiv = document.getElementById("content")
+  contentDiv.removeChild(contentDiv.firstElementChild)
+
+  const myList = document.getElementById("myList")
+  myList.removeChild(myList.lastElementChild)
+</script>
