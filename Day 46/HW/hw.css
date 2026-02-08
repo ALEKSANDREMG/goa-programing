@@ -1,0 +1,105 @@
+.hover-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .hover-btn:hover {
+    background-color: #2ecc71;
+  }
+  
+  .hover-link {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .hover-link:hover {
+    color: #e74c3c;
+  }
+  
+  .hover-img {
+    transition: transform 0.3s ease;
+  }
+  
+  .hover-img:hover {
+    transform: scale(1.1);
+  }
+  
+  .hover-text {
+    transition: color 0.3s;
+  }
+  
+  .hover-text:hover {
+    color: #e74c3c;
+  }
+  
+  .hover-border {
+    border: 2px solid #3498db;
+    padding: 20px;
+    transition: border-width 0.3s;
+  }
+  
+  .hover-border:hover {
+    border-width: 5px;
+  }
+  
+  .press-btn {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+  }
+  
+  .press-btn:active {
+    transform: scale(0.95);
+  }
+  
+  .hover-opacity {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    transition: opacity 0.3s;
+  }
+  
+  .hover-opacity:hover {
+    opacity: 0.5;
+  }
+  
+  .hover-padding {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    transition: padding 0.3s;
+  }
+  
+  .hover-padding:hover {
+    padding: 30px;
+  }
+  
+  .icon {
+    font-size: 30px;
+    transition: transform 0.3s;
+  }
+  
+  .icon:hover {
+    transform: rotate(15deg);
+  }
+  
+  .hover-shadow {
+    background-color: #ecf0f1;
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  

@@ -1,0 +1,29 @@
+/*1*/
+.box {
+    width: 500px;
+    height: 500px;
+    background-color: green;
+    transition: all 0.3s ease;
+  }
+  
+  .box:hover {
+    transform: scale(2) rotate(45deg);
+  }
+  
+  .box:active {
+    transform: translate(-50px, -100px);
+  }
+
+/*2
+  .my-div {
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    transition: font-size 1s, color 2s, background-color 2s;
+}
+
+.my-div:active {
+    font-size: 25px;
+    color: black;
+    background-color: white;
+}

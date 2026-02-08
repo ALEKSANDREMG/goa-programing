@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>დავალებები</title>
+  <style>
+    body {
+      padding: 20px;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- დავალება 1 -->
+  <h2 id="result1"></h2>
+  <input type="number" id="ageInput" placeholder="შეიყვანე ასაკი">
+  <input type="text" id="phraseInput" placeholder="შეიყვანე საყვარელი ფრაზა">
+  <button onclick="task1()">გაგზავნა</button>
+
+  <hr>
+
+  <!-- დავალება 2 -->
+  <label for="rangeInput">აირჩიე მნიშვნელობა:</label>
+  <input type="range" id="rangeInput" min="0" max="100" oninput="task2()">
+  <span id="rangeValue">Current value: 50</span>
+
+  <hr>
+
+  <!-- დავალება 3 -->
+  <input type="text" id="nameInput" placeholder="შეიყვანე სახელი">
+  <input type="text" id="emojiInput" placeholder="შეიყვანე emoji">
+  <button onclick="task3()">მისალმება</button>
+  <h1 id="greetingResult"></h1>
+
+  <hr>
+
+  <!-- დავალება 4 -->
+  <textarea id="messageInput" placeholder="დაწერე შეტყობინება" rows="4" cols="40"></textarea><br>
+  <button onclick="task4()">გამოჩენა და ფონის შეცვლა</button>
+  <p id="messageOutput"></p>
+
+  <hr>
+
+  <!-- დავალება 5 -->
+  <input type="number" id="num1" placeholder="რიცხვი 1">
+  <input type="number" id="num2" placeholder="რიცხვი 2">
+  <button onclick="task5()">ჯამი</button>
+  <h2 id="sumResult"></h2>
+
+  <hr>
+
+  <!-- დავალება 6 -->
+  <input type="text" id="charCountInput" placeholder="შეიყვანე ტექსტი">
+  <button onclick="task6()">სიმბოლოების რაოდენობა</button>
+  <p id="charCountResult"></p>
+
+  <hr>
+
+  <!-- დავალება 7 -->
+  <input type="text" id="colorInput" placeholder="შეიყვანე ფერი (მაგ. red)">
+  <button onclick="task7()">შეცვალე ფონი</button>
+
+  <script>
+    function task1() {
+      let age = document.getElementById("ageInput").value;
+      let phrase = document.getElementById("phraseInput").value;
+      document.getElementById("result1").innerText =
+        "თქვენი ასაკია " + age + " და საყვარელი ფრაზაა: " + phrase;
+    }
+
+    function task2() {
+      let value = document.getElementById("rangeInput").value;
+      document.getElementById("rangeValue").innerText = "Current value: " + value;
+    }
+
+    function task3() {
+      let name = document.getElementById("nameInput").value;
+      let emoji = document.getElementById("emojiInput").value;
+      document.getElementById("greetingResult").innerText =
+        "გთხოვთ, მიესალმეთ: " + emoji + " " + name + "!";
+    }
+
+    function task4() {
+      let msg = document.getElementById("messageInput").value;
+      document.getElementById("messageOutput").innerText = msg;
+      document.body.style.backgroundColor = "lightyellow";
+    }
+
+    function task5() {
+      let n1 = parseFloat(document.getElementById("num1").value);
+      let n2 = parseFloat(document.getElementById("num2").value);
+      let sum = n1 + n2;
+      document.getElementById("sumResult").innerText = "ჯამი: " + sum;
+    }
+
+    function task6() {
+      let text = document.getElementById("charCountInput").value;
+      document.getElementById("charCountResult").innerText =
+        "სიმბოლოების რაოდენობაა: " + text.length;
+    }
+
+    function task7() {
+      let color = document.getElementById("colorInput").value;
+      document.body.style.backgroundColor = color;
+    }
+  </script>
+
+</body>
+</html>

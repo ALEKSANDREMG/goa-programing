@@ -1,0 +1,48 @@
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      "hero hero side1"
+      "hero hero side2"
+      "main main main"
+      "foot1 foot2 foot3 foot4 foot5";
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: repeat(2, 150px) 100px 100px;
+    gap: 10px;
+    background-color: #111;
+    padding: 10px;
+  }
+  
+  .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  
+  .item1 { grid-area: hero; background: linear-gradient(to right, #f0f, #f9f); }
+  .item2 { grid-area: main; background: linear-gradient(to right, #d9a7c7, #fffcdc); }
+  .item3 { grid-area: side1; background: linear-gradient(to right, #74ebd5, #acb6e5); }
+  .item4 { grid-area: side2; background: linear-gradient(to right, #74ebd5, #9face6); }
+  
+  .item5, .item6, .item7, .item8, .item9 {
+    background: linear-gradient(to right, #f6d365, #fda085);
+  }
+  
+  .item5 { grid-area: foot1; }
+  .item6 { grid-area: foot2; }
+  .item7 { grid-area: foot3; }
+  .item8 { grid-area: foot4; }
+  .item9 { grid-area: foot5; }
+  
+  .grid-container {
+    grid-template-areas:
+      "hero hero side1"
+      "hero hero side2"
+      "main main main"
+      "foot1 foot2 foot3 foot4 foot5";
+    grid-template-columns: 2fr 2fr 1fr;
+  }
+  

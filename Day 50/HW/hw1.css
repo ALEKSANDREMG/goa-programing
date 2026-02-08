@@ -1,0 +1,60 @@
+.profile-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    max-width: 700px;
+    margin: 20px auto;
+    transition: all 0.3s ease;
+  }
+  
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .profile-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .profile-info h2 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+  }
+  
+  .profile-info p {
+    margin: 0 0 15px;
+    color: #555;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #0077ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 600px) {
+    .profile-card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .profile-img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .profile-info {
+      padding: 15px;
+    }
+  }
+  

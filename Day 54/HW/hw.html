@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Emoji Fun</title>
+</head>
+<body>
+  <p id="message">Your message will appear here.</p>
+
+  <script>
+    hobby = prompt("What is your favorite hobby?");
+    alert("Your favorite hobby is: " + hobby);
+
+    firstName = prompt("Enter your first name:");
+    lastName = prompt("Enter your last name:");
+    fullName = firstName + " " + lastName;
+    alert("Your full name is: " + fullName);
+
+    userMessage = prompt("Type a message you'd like to display on the page:");
+    document.getElementById("message").textContent = userMessage;
+
+    emoji = prompt("What is your favorite emoji?");
+    alert("Thank you! Your favorite emoji is: " + emoji);
+
+    newTitle = prompt("Enter a word to set as the page title:");
+    document.title = newTitle;
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Tasks</title>
+</head>
+<body>
+
+  <form id="textForm">
+    <input type="text" id="textInput" placeholder="Type something">
+    <button type="button" onclick="alert(document.getElementById('textInput').value)">Show Alert</button>
+  </form>
+
+  <br>
+
+  <form id="colorForm" onsubmit="event.preventDefault(); document.body.style.backgroundColor = document.getElementById('colorInput').value;">
+    <input type="color" id="colorInput">
+    <button type="submit">Change Background</button>
+  </form>
+
+  <br>
+
+  <form id="nameForm">
+    <input type="text" id="first" placeholder="First Name">
+    <input type="text" id="last" placeholder="Last Name">
+    <button type="button" onclick="document.getElementById('fullName').textContent = document.getElementById('first').value + ' ' + document.getElementById('last').value;">Show Full Name</button>
+  </form>
+
+  <h1 id="fullName"></h1>
+
+</body>
+</html>

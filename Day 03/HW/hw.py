@@ -1,0 +1,1 @@
+print(" my name is alexandre, i am 9years old, my lastname is mgaloblishvili")

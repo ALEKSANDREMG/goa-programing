@@ -1,0 +1,20 @@
+/* Set a custom link color */
+a {
+    color: #007bff; /* Choose your custom color */
+    text-decoration: none; /* Remove the default underline */
+    font-weight: bold; /* Make the text bold */
+    font-style: italic; /* Change the font style to italic */
+    text-transform: uppercase; /* Convert text to uppercase */
+}
+
+/* Add an underline on hover */
+a:hover {
+    text-decoration: underline; /* Underline the link on hover */
+    color: #ff5733; /* Change the color on hover */
+    background-color: #f0f0f0; /* Add a background color on hover */
+}
+
+/* Style visited links */
+a:visited {
+    color: #6c757d; /* A different color for visited links */
+}

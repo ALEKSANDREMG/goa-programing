@@ -1,0 +1,14 @@
+.parent-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 1000px;
+    background-color: lightgray;
+}
+
+.child-box {
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50;
+    margin: 5px;
+}

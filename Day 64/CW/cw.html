@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM მეთოდები</title>
+</head>
+<body>
+
+  <div id="original">ეს არის ორიგინალი</div>
+
+  <script>
+    let original = document.getElementById("original");
+    let clone1 = original.cloneNode(true);
+    document.body.appendChild(clone1);
+
+    let clone2 = original.cloneNode(false);
+    clone2.textContent = "მეორე ასლი";
+    document.body.appendChild(clone2);
+
+    let newDiv = document.createElement("div");
+    newDiv.textContent = "ახალი დივი";
+    document.body.appendChild(newDiv);
+
+    let newImg = document.createElement("img");
+    newImg.src = "https://via.placeholder.com/100";
+    document.body.appendChild(newImg);
+
+    let ul = document.createElement("ul");
+    let li1 = document.createElement("li");
+    li1.textContent = "პუნქტი 1";
+    ul.appendChild(li1);
+
+    let li2 = document.createElement("li");
+    li2.textContent = "პუნქტი 2";
+    ul.appendChild(li2);
+    document.body.appendChild(ul);
+
+    let container = document.createElement("div");
+    let oldPara = document.createElement("p");
+    oldPara.textContent = "ძველი ტექსტი";
+    container.appendChild(oldPara);
+    document.body.appendChild(container);
+
+    let newPara = document.createElement("h2");
+    newPara.textContent = "ახალი ტექსტი";
+    container.replaceChild(newPara, oldPara);
+
+    let span = document.createElement("span");
+    span.textContent = "მეორე ძველი";
+    container.appendChild(span);
+
+    let btn = document.createElement("button");
+    btn.textContent = "ახალი ღილაკი";
+    container.replaceChild(btn, span);
+  </script>
+
+</body>
+</html>
